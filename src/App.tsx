@@ -6,7 +6,7 @@ import { Spin } from 'antd';
 import useDisableShortcutsAndRightClick from './Hooks/useDisableShortcutsAndRightClick';
 
 const App = () => {
-  // useDisableShortcutsAndRightClick()
+  useDisableShortcutsAndRightClick()
   return (
     <Routes>
       {routes.map((route:any) => (
