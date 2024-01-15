@@ -33,11 +33,11 @@ const Contact = () => {
       <Form ref={form} onSubmit={sendEmail}>
           <Form.Group controlId="formName">
             <Form.Label>Name</Form.Label>
-            <Form.Control type="text" name="user_name" placeholder="Enter your name" />
+            <Form.Control type="text" name="to_name" placeholder="Enter your name" />
           </Form.Group>
           <Form.Group controlId="formEmail">
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" name="user_email" placeholder="Enter your email" />
+            <Form.Control type="email" name="from_name" placeholder="Enter your email" />
           </Form.Group>
           <Form.Group controlId="formMessage">
             <Form.Label>Message</Form.Label>
