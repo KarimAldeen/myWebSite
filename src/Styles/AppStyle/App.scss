@@ -1,8 +1,11 @@
 html,body {
     background: var(--bg);
     @include Scrollbar(var(--primary)) ;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    color: var(--text);
+
+
     
 
 

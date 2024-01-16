@@ -1,45 +1,40 @@
-import { FacebookFilled, InstagramFilled, LinkedinFilled, TwitterCircleFilled } from '@ant-design/icons'
-import { Button, Divider } from 'antd'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Button, Divider } from 'antd';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const Footer = () => {
+const Footer: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='Footer'>
       <div>
         <div>
-          <h1>Mohammed Karim Alden</h1>
-          <p>
-            Work As FronEnd Developer With Over two Year and half of Experience
-            , self motivated ,ambitious and hard Worker Hoping to Make my
-            interpersonal Skill to Achieve Goals of Company          </p>
+          <h1>{t('footer.title')}</h1>
+          <p>{t('footer.description')}</p>
         </div>
-
-
-
         <div className='ContactFooter'>
-          <h1>Contact Me</h1>
-          <h2>Phone : 0951968995</h2>
-          <h3>mohammedkarimalden@gmail.com</h3>
-        
+          <h1>{t('footer.contact.title')}</h1>
+          <h2>{t('footer.contact.phone')}</h2>
+          <h3>{t('footer.contact.email')}</h3>
         </div>
       </div>
       <Divider />
       <span>
         <div>
-          @2023 All Right Reserved By KarimAldeen
+          {t('footer.rightsReserved')}
         </div>
         <div>
           <span>
-            Privacy Policy
+            {t('footer.privacyPolicy')}
           </span>
           <span>
-            Cookie Policy
+            {t('footer.cookiePolicy')}
           </span>
         </div>
       </span>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

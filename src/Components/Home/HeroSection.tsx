@@ -1,31 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Visibale from '../../HOC/withVisibale'
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <Visibale className='HeroSection' id="Home">
       <div className="in_HeroSection" id="Home">
         <h1>
-          KARIM ALDEEN
+          {t('hero.name')}
           <br />
-          FRONT END DEVELOPER
+          {t('hero.role')}
         </h1>
         <p>
-          Work As FronEnd Developer
-          <strong> With Over two Year and half of Experience </strong>
-          self-motivated, ambitious, and hard Worker Hoping to Make my
-          interpersonal Skill to Achieve Goals of Company
+          {t('hero.description')}
+          <strong> {t('hero.experience')}</strong>
+          {t('hero.personalDescription')}
         </p>
         <div className='Buttons'>
           <a href="#questions">
             <button>
-              Asked Questions
+              {t('hero.askedQuestions')}
             </button>
           </a>
           <a href="#ContactMe">
             <button className='SecButton'>
-              Contact Me
+              {t('hero.contactMe')}
             </button>
           </a>
         </div>

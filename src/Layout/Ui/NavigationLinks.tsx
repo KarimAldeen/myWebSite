@@ -17,7 +17,7 @@ export const NavigationLinks = ({ className }: any) => {
     { label: t('education'), to: '#education' },
     { label: t('LookingFor'), to: '#LookingFor' },
     { label: t('ContactMe'), to: '#ContactMe' },
-    { label: t('DownloadCv'), to: "download" },
+    { label: t('DownloadCv'), to: 'download' },
   ];
 
   const scrollToElement = (id: string) => {
@@ -31,26 +31,26 @@ export const NavigationLinks = ({ className }: any) => {
     <ul className={className} role="navigation">
       {links.map((link, index) => (
         <li key={index} className={`${location.pathname}${location.hash}` === link.to ? 'active' : ''}>
-        {
-          link.to !== "download" ? 
-          <Link
-          to={link.to}
-          onClick={() => {
-            if (link.to.startsWith('#')) {
-              scrollToElement(link.to.substring(1));
-            }
-          }}
-        >
-          {link.label}
-        </Link>
-        :
-        <a
-        href={'../MohammedKarimAldenResume.pdf'}
-        download
-      >
-        {link.label}
-      </a>
-        }
+          {
+            link.to !== 'download' ? 
+            <Link
+              to={link.to}
+              onClick={() => {
+                if (link.to.startsWith('#')) {
+                  scrollToElement(link.to.substring(1));
+                }
+              }}
+            >
+              {link.label}
+            </Link>
+            :
+            <a
+              href={'../MohammedKarimAldenResume.pdf'}
+              download
+            >
+              {link.label}
+            </a>
+          }
         </li>
       ))}
     </ul>

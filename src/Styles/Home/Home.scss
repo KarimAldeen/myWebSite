@@ -226,6 +226,7 @@ scroll-behavior: smooth;
                 gap: 5vw;
                 justify-content: center;
                 flex-wrap: wrap;
+                color: var(--text);
 
                 .Feature {
                     &:nth-child(1){
@@ -240,7 +241,7 @@ scroll-behavior: smooth;
                             left: 0;
                             transform: rotate(-45deg);
                             background: var(--secondary);
-                            color: var(--white);
+                            color: var(--text);
                             border-radius: 50%;
                             padding: 5px;
                         }
@@ -256,7 +257,7 @@ scroll-behavior: smooth;
                             right: 0;
                             transform: rotate(-45deg);
                             background: var(--secondary);
-                            color: var(--white);
+                            color: var(--text);
                             border-radius: 50%;
                             padding: 5px;
                         }
@@ -511,7 +512,7 @@ scroll-behavior: smooth;
     gap: 50px;
     button {
         background-color: black !important;
-        color: var(--bg) !important;
+        color: var(--white);
         font-weight: bold;
         outline: none;
         border: none;
@@ -530,7 +531,7 @@ scroll-behavior: smooth;
 
     button {
         background-color: var(--secondary);
-        color: var(--bg);
+        color: var(--white);
     }
 
     .ContactImage {
@@ -551,8 +552,20 @@ scroll-behavior: smooth;
         }
 
     }
+   
 
 }
+.ant-collapse-header-text{
+    color: var(--text) !important;
+}
+
+}
+:where(.css-dev-only-do-not-override-y8x9xp).ant-float-btn .ant-float-btn-body .ant-float-btn-content .ant-float-btn-icon {
+    width: 23px !important;
+
+}
+:where(.css-dev-only-do-not-override-y8x9xp).ant-float-btn-primary .ant-float-btn-body{
+    background: var(--primary) !important;
 }
 
 

@@ -145,11 +145,11 @@
                     all: unset;
                     @include underLineText(var(--primary), var(--primary));
                     padding-bottom: 1px;
-                    color: var(--text);
+                    color: var(--black);
                     opacity: .6;
     
                     &:hover{
-                        color: var(--text) !important;
+                        color: var(--black) !important;
     
                     }
                     &:last-child {

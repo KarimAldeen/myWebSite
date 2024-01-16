@@ -18,7 +18,7 @@ const Auth = () => {
           </div>
           <div className=" Right_Col ">
            
-         <LoginForm/>
+         {/* <LoginForm/> */}
          
           </div>
         </div>

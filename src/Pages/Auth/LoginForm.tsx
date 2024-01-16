@@ -1,6 +1,6 @@
 import React from 'react'
 import { Formik, Form, Field } from 'formik';
-import Translate from '../../Components/Utils/Translate';
+// import Translate from '../../Components/Utils/Translate';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { TOKEN_KEY } from '../../config/AppKey';
@@ -22,7 +22,7 @@ const LoginForm = () => {
     <div className='LoginForm'>
       <nav className='Login_Nav'>
         <h5> {t("Login")} </h5>
-        <div><Translate /></div>
+        {/* <div><Translate /></div> */}
       </nav>
       <Formik
         initialValues={{ username: '', password: '' }}
