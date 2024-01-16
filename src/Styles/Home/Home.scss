@@ -1,6 +1,5 @@
 .Home_Page {
     width: 100%;
-   
 
     .HeroSection {
         overflow: hidden;
@@ -552,8 +551,6 @@
 
 
 
-//// animation
-
 .Home_Page {
 
     .in_HeroSection {
@@ -599,7 +596,188 @@
 }
 
 @media screen and (max-width: 700px) {
+    .Home_Page {
 
+    .HeroSection {
+        overflow: hidden;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #1C2225;
+        color: var(--white);
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 4rem;
+            bottom: 0rem;
+            height: 360px;
+            background-color: #00A7E1;
+            width: 125px;
+            transform: rotate(45deg);
+            border-radius: 65rem;
+            -webkit-filter: blur(200px);
+            -moz-filter: blur(200px);
+            -ms-filter: blur(200px);
+            filter: blur(200px);
+            outline: none;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 4rem;
+            top: 0rem;
+            height: 360px;
+            background-color: #00A7E1;
+            width: 125px;
+            transform: rotate(45deg);
+            border-radius: 65rem;
+            // -webkit-filter: blur(200px);
+            // -moz-filter: blur(200px);/
+            // -ms-filter: blur(200px);
+            filter: blur(200px);
+            // outline: none;
+        }
+
+        .in_HeroSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin-inline: auto;
+            padding-top: clamp(10vw,120px,30vh);
+            
+            // visibility: hidden;
+
+            >h1 {
+                font-size: 8vw;
+                text-align: center;
+                background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0.21) 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+                font-weight: bold;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0rem;
+                    bottom: -20px;
+                    width: 230px;
+                    height: 20px;
+
+                    background-image: url('../../assets/img/UnderCurle.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    z-index: 3;
+
+                }
+
+            }
+
+            >p {
+                font-size:2.5vw !important;
+                width: 80%;
+                text-align: center;
+                margin-block: 50px;
+                color: var(--white);
+            }
+
+            .Buttons {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    background: var(--primary);
+                    color: var(--white);
+                    font-weight: bold;
+                    padding: 12px 30px;
+
+                    border-radius: 30px;
+                    outline: none;
+                    border: 1px solid var(--primary);
+                    font-size: 15px;
+
+                    &:hover {
+                        background: transparent;
+                        border-color: var(--white);
+
+                    }
+                }
+
+                button:first-child {
+                    background: transparent;
+                    border-color: var(--white);
+
+                    &:hover {
+                        border-color: var(--primary);
+                        background: var(--primary);
+
+                    }
+                }
+
+            }
+
+            >span {
+                margin-block: 30px;
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+
+                >div {
+                    display: flex;
+                    align-items: flex-end;
+
+                    >p {
+                        transform: translateY(10px);
+                    }
+                }
+
+            }
+
+            .LogoCards {
+                width: 90vw;
+                padding-block: 50px;
+                animation: fade 6s ease-in-out;
+                animation-fill-mode: forwards;
+
+                @keyframes fade {
+                    from {
+                        opacity: 0;
+                        transform: translate3d(-1600px, 0, 0);
+                        width: 20vw;
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: none;
+                        width: 90vw;
+
+                    }
+                }
+
+
+                .LogoCard {
+                    img {
+                        width: 100px;
+                        height: 50px;
+                        cursor: pointer;
+
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
 
     .PowerfulFeatures {
         position: relative;
@@ -715,16 +893,18 @@
         max-width: 100%;
 
         .AboutUs_Left {
+            text-align: start;
+            max-width: 100%;
             h1 {
                 font-size: 5vw;
                 margin-bottom: 20px;
-                text-align: center;
+                text-align: start;
             }
 
             p {
                 font-size: 2vw;
                 width: 100%;
-                text-align: center;
+                text-align: start;
 
             }
         }
@@ -760,6 +940,48 @@
 
         }
     }
+    .LookingFor{
+        height: 420px;
+        width: 100%;
+        margin-inline: auto;
+        margin-block: 50px;
+        background-image: url('../../assets/img/LookingFor.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position : 50% 100% ;
+        background-attachment: fixed;
+        padding: 5%;
+        display: flex;
+    
+        color: var(--white);
+        >div{
+            width: 80%;
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 5%;
+            height: 100%;
+            >button{
+                background: transparent;
+                color: var(--white);
+                font-weight: bold;
+                padding: 10px 20px;
+                border-radius: 30px;
+                outline: none;
+                border: 1px solid var(--white);
+                    width: 70%;
+                    font-size: 14px;
+                &:hover {   
+                    background: transparent;
+                    border-color: var(--white);
+    
+                }
+            }
+    
+        }
+    }
     .Questions {
         margin-block: 0px;
         padding-inline: 5vw;
@@ -781,7 +1003,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        padding: 0 10vw;
+        padding: 0 0vw;
         gap: 50px;
 
         >div {
@@ -811,11 +1033,12 @@
 .ant-row{
 justify-content: end;
 }
-.ant-form{
-    width: 100%;
+form{
+    width: 80%;
+    text-align: start;
 }
         .ContactImage {
-            width: 60vw;
+            width: 90vw;
             height: 42vw;
 
             .ContactColor {
@@ -834,4 +1057,5 @@ justify-content: end;
         }
 
     }
+}
 }

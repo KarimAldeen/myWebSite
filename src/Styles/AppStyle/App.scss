@@ -1,6 +1,7 @@
 html,body {
     background: var(--bg);
     @include Scrollbar(var(--primary)) ;
+    overflow-x: hidden;
 
 
 }
