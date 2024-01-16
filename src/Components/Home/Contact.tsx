@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="Contact" id="contact">
+    <div className="Contact" id="ContactMe">
       <div>
         <h1>Contact Me</h1>
         <p>Send your message and it will be automatically sent to my Gmail </p>

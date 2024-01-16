@@ -19,7 +19,7 @@ const WithDrawer: React.FC<WithDrawerProps> = ({ button, children,title ="Basic 
     <>
       <Space>
         {React.cloneElement(button as React.ReactElement, {
-          onClick: () => setOpen(true),
+          onClick: () => setOpen(!open),
         })}
       </Space>
       <Drawer

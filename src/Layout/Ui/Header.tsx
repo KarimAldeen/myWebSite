@@ -17,20 +17,14 @@ const Header = () => {
           <div className='Logo'/>
         </Link>
         <nav className='Nav'>
-           <NavigationLinks />
-          <div className='MenuNav'>
+           <NavigationLinks className="Links" />
+          <div className='MenuNav '>
             <WithDrawer
+            
               title='Nav Links'
               button={<Button icon={<MenuOutlined />} type='primary' />}
             >
-               <NavigationLinks />
-              <ul className='DrawerLinks'>
-                <li>
-                  <div>
-                    {t('Hire Us')} <FaArrowAltCircleRight />
-                  </div>
-                </li>
-              </ul>
+             <NavigationLinks className="DrawerLinks" />
             </WithDrawer>
           </div>
         </nav>

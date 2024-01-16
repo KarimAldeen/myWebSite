@@ -1,6 +1,6 @@
 .Home_Page {
     width: 100%;
-
+scroll-behavior: smooth;
     .HeroSection {
         overflow: hidden;
         width: 100%;
@@ -113,7 +113,7 @@
                     }
                 }
 
-                button:first-child {
+                .SecButton {
                     background: transparent;
                     border-color: var(--white);
 
@@ -711,7 +711,7 @@
                     }
                 }
 
-                button:first-child {
+                .SecButton {
                     background: transparent;
                     border-color: var(--white);
 

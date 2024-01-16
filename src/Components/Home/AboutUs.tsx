@@ -23,7 +23,7 @@ const aboutUsData = [
 
 const AboutUs = () => {
   return (
-    <Visibale className='AboutUs' id='aboutus'>
+    <Visibale className='AboutUs' id='education'>
       <div className="AboutUs_Left">
         <h1>My EDUCATION </h1>
         <p>After three years at my first university, I had to take a year off due to illness. Following my recovery, I chose to begin anew at a different university. Excited for a fresh start, I'm optimistic about the opportunities this change brings to my academic journey.</p>
