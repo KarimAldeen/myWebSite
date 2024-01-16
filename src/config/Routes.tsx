@@ -1,8 +1,8 @@
 import { ReactElement, lazy, LazyExoticComponent } from 'react';
-import Auth from '../Pages/Auth/Page';
-import Page from '../Pages/Home/Page';
 
 const Page404 = lazy(() => import('../Layout/Ui/NotFoundPage'));
+const Page = lazy(() => import('../Pages/Home/Page'));
+
 
 interface Route {
   path: string;
@@ -13,7 +13,6 @@ interface Route {
 
 export const routes: Route[] = [
   { path: "*", header: "Error Page", element: <Page404 /> },
-  { path: "/auth", header: "Sign In", element: <Auth /> },
   { path: "/", header: "Home Page", element: <Page />, withLayout: true }
 ];
 

@@ -43,7 +43,7 @@ const Contact = () => {
             <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" rows={4} name="message" placeholder="Type your message here" />
           </Form.Group>
-          <Button className='mt-4 w-100' variant="primary" type="submit">
+          <Button className='mt-4 w-100'  type="submit">
             Submit
           </Button>
         </Form>

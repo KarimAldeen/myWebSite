@@ -28,7 +28,7 @@ export const NavigationLinks = ({ className }: any) => {
   };
 
   const renderNavLinks = (links: NavLink[]) => (
-    <ul className={className}>
+    <ul className={className} role="navigation">
       {links.map((link, index) => (
         <li key={index} className={`${location.pathname}${location.hash}` === link.to ? 'active' : ''}>
         {

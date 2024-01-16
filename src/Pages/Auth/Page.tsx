@@ -12,6 +12,7 @@ const Auth = () => {
               src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
               className="img-fluid"
               alt="Phone"
+              loading="lazy" 
              
             />
           </div>

@@ -13,14 +13,14 @@ const Header = () => {
   useScrollEffects()
     return (
       <header className='Header'>
-        <Link to='/'>
-          <div className='Logo'/>
+        <Link to='/#Home'>
+          <div className='Logo' role='img' aria-label='Logo' />
         </Link>
         <nav className='Nav'>
            <NavigationLinks className="Links" />
           <div className='MenuNav '>
             <WithDrawer
-            
+
               title='Nav Links'
               button={<Button icon={<MenuOutlined />} type='primary' />}
             >

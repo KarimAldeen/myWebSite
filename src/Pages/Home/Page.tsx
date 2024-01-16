@@ -1,10 +1,12 @@
-import React from 'react'
-import HeroSection from '../../Components/Home/HeroSection'
-import PowerfulFeatures from '../../Components/Home/PowerfulFeatures'
-import AboutUs from '../../Components/Home/AboutUs'
-import OurHow from '../../Components/Home/LookingFor'
-import Questions from '../../Components/Home/Questions'
-import Contact from '../../Components/Home/Contact'
+import { lazy } from 'react';
+
+const HeroSection = lazy(() => import('../../Components/Home/HeroSection'));
+const PowerfulFeatures = lazy(() => import('../../Components/Home/PowerfulFeatures'));
+const AboutUs = lazy(() => import('../../Components/Home/AboutUs'));
+const OurHow = lazy(() => import('../../Components/Home/LookingFor'));
+const Questions = lazy(() => import('../../Components/Home/Questions'));
+const Contact = lazy(() => import('../../Components/Home/Contact'));
+
 
 const Page = () => {
   return (

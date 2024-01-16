@@ -9,14 +9,14 @@ const Translate: React.FC = () => {
 
   const EnLanguage = memo(() => (
     <div className="MenuChange" onClick={EnLanguageClickHandler}>
-       <img alt='' src='../Layout/En.svg' width={20} height={20} /> 
+       <img alt='EnglishImage' src='../Layout/En.svg' width={20} height={20} /> 
       {t('En')}
     </div>
   ));
   
   const ArLanguage = memo(() => (
     <div  className="MenuChange" onClick={ArLanguageClickHandler}>
-      <img alt='' src='../Layout/Ar.svg' width={20} height={20} /> 
+      <img alt='ArabicImage' src='../Layout/Ar.svg' width={20} height={20} /> 
       {t('Ar')}
     </div>
   ));

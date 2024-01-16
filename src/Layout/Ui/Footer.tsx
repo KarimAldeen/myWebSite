@@ -19,8 +19,8 @@ const Footer = () => {
 
         <div className='ContactFooter'>
           <h1>Contact Me</h1>
-          <h6>Phone : 0951968995</h6>
-          <h6>mohammedkarimalden@gmail.com</h6>
+          <h2>Phone : 0951968995</h2>
+          <h3>mohammedkarimalden@gmail.com</h3>
         
         </div>
       </div>

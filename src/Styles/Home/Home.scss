@@ -509,7 +509,13 @@ scroll-behavior: smooth;
 
     padding: 0 10vw;
     gap: 50px;
-
+    button {
+        background-color: black !important;
+        color: var(--bg) !important;
+        font-weight: bold;
+        outline: none;
+        border: none;
+    }
     >div {
         h1 {
             font-size: 4.5vw;
