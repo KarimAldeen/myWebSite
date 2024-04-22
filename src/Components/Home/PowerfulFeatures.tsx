@@ -1,7 +1,7 @@
 import React from 'react';
 import Visibale from '../../HOC/withVisibale';
 import { useTranslation } from 'react-i18next';
-import { FaReact, FaGithub, FaFigma, FaSearchengin, FaSass } from 'react-icons/fa';
+import { FaReact, FaGithub, FaFigma, FaSearchengin, FaSass, FaLaravel } from 'react-icons/fa';
 import { SiTypescript, SiSolidity, SiDesignernews } from 'react-icons/si';
 
 const PowerfulFeatures = () => {
@@ -14,7 +14,7 @@ const PowerfulFeatures = () => {
     { title: 'solidPrinciples', icon: <SiSolidity /> },
     { title: 'GitHub', icon: <FaGithub /> },
     { title: 'SEO', icon: <FaSearchengin /> },
-    { title: 'Figma', icon: <FaFigma /> },
+    { title: 'Laravel', icon: <FaLaravel /> },
     { title: 'Adobe', icon: <SiDesignernews /> },
   ];
 

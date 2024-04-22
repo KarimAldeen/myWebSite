@@ -31,9 +31,9 @@
 
 "hero": {
     "name": "KARIM ALDEEN",
-    "role": "FRONT END DEVELOPER",
-    "description": "Work As FrontEnd Developer",
-    "experience": "With Over two Years and half of Experience",
+    "role": "FULL STACK END DEVELOPER",
+    "description": "Work As FULL STACK Developer",
+    "experience": "With Over three Years In React and half Year in Laravel ",
     "personalDescription": "self-motivated, ambitious, and hard Worker Hoping to Make my interpersonal Skill to Achieve Goals of Company",
     "askedQuestions": "Asked Questions",
     "contactMe": "Contact Me"
@@ -48,7 +48,7 @@
       "solidprinciples": "Solid Principles",
       "github": "GitHub",
       "seo": "SEO",
-      "figma": "Figma",
+      "laravel": "Laravel",
       "adobe": "Adobe"
     }
   },
@@ -57,19 +57,19 @@
     "educationDescription": "After three years at my first university, I had to take a year off due to illness. Following my recovery, I chose to begin anew at a different university. Excited for a fresh start, I'm optimistic about the opportunities this change brings to my academic journey.",
     "syrianVirtualUniversity": {
       "title": "Syrian Virtual University",
-      "content": "Embarked on the journey of studying Information Technology (BAIT) at the Syrian Virtual University. The first year curriculum provided a foundational understanding of various aspects of IT."
+      "content": "Embarked on the journey of studying Information Technology (BACT) at the Syrian Virtual University. The first year curriculum provided a foundational understanding of various aspects of IT."
     },
     "metaCourseAdvancedReact": {
       "title": "Meta Course Advanced React",
       "content": "Completed the Advanced React course offered by Meta, gaining proficiency in building sophisticated React applications and mastering advanced concepts."
     },
-    "metaCourseFrontEndDevelopment": {
+    "metaCourseFULL STACKDevelopment": {
       "title": "Meta Course Front-End Development",
       "content": "Engaged in the Front-End Development course provided by Meta, acquiring skills in creating responsive and visually appealing user interfaces using modern front-end technologies."
     }
   },
   "lookingFor": {
-    "title": "Looking For Job As FrontEnd Developer",
+    "title": "Looking For Job As FULL STACK Developer",
     "content": "Passionate about creating seamless user experiences, I specialize in React.js development. I am eager to contribute my skills and expertise to a dynamic company that values innovation and cutting-edge technologies.",
     "buttonText": "Take a Look at My CV"
   },
@@ -81,7 +81,7 @@
     },
     "careerBackground": {
       "label": "Can you provide an overview of your career background as a Front-End Developer",
-      "content": "Work As FronEnd Developer With Over two Year and half of Experience, self motivated, ambitious and hard Worker Hoping to Make my interpersonal Skill to Achieve Goals of Company"
+      "content": "Work As FronEnd Developer With Over three Year and half of Experience, self motivated, ambitious and hard Worker Hoping to Make my interpersonal Skill to Achieve Goals of Company"
     },
     "educationalBackground": {
       "label": "What is your educational background?",
@@ -107,10 +107,10 @@
         "Nokbeh Alrbia:",
         "Worked on the development of a mid-scale E-commerce platform using ReactJS.",
         "Completed the design and creation of over 5 logos.",
-        "Crafted two Personal Portfolios showcasing diverse skills and projects.",
+        "Crafted three Personal Portfolios showcasing diverse skills and projects.",
         "(2020 - 03/2021):",
         "Constructed a Dashboard for a large Delivery App.",
-        "Developed two websites, including a Landing Page and Customer Interface.",
+        "Developed three websites, including a Landing Page and Customer Interface.",
         "Successfully deployed the project to cPanel for seamless accessibility."
       ]
       
@@ -132,7 +132,7 @@
     }
   , "footer": {
     "title": "Mohammed Karim Alden",
-    "description": "Work As FrontEnd Developer With Over two Years and half of Experience, self-motivated, ambitious, and hard Worker Hoping to Make my interpersonal Skill to Achieve Goals of Company",
+    "description": "Work As FULL STACK Developer With Over three Years and half of Experience, self-motivated, ambitious, and hard Worker Hoping to Make my interpersonal Skill to Achieve Goals of Company",
     "contact": {
       "title": "Contact Me",
       "phone": "Phone: 0951968995",
