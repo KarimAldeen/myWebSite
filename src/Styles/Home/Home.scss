@@ -8,6 +8,7 @@ scroll-behavior: smooth;
         background-color: #1C2225;
         color: var(--white);
         position: relative;
+        padding-bottom: 3vw;
 
         &::after {
             content: "";

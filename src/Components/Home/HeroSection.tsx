@@ -16,8 +16,6 @@ const HeroSection = () => {
         </h1>
         <p>
           {t('hero.description')}
-          <strong> {t('hero.experience')}</strong>
-          {t('hero.personalDescription')}
         </p>
         <div className='Buttons'>
           <a href="#questions">

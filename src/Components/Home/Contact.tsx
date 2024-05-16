@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import React, { useRef, useState } from 'react';
+import { Button, Form, Spinner } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
@@ -8,9 +8,11 @@ import ContactImage from './ContactImage';
 const Contact: React.FC = () => {
   const form = useRef<any>(null);
   const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
 
     if (form.current) {
       emailjs.sendForm('service_chmcscc', 'template_t5rgrcx', form.current, '29G9zbZsqD6c-xDsz')
@@ -18,6 +20,8 @@ const Contact: React.FC = () => {
           console.log(result.text);
           form.current.reset();
           toast.success(t('contact.emailSentSuccess'));
+          setIsLoading(false);
+
         })
         .catch((error) => {
           console.log(error.text);
@@ -46,8 +50,14 @@ const Contact: React.FC = () => {
             <Form.Label>{t('contact.message')}</Form.Label>
             <Form.Control as="textarea" rows={4} name="message" placeholder={t('contact.typeYourMessage')} />
           </Form.Group>
-          <Button className='mt-4 w-100' type="submit">
-            {t('contact.submit')}
+          <Button disabled={isLoading} className='mt-4 w-100' type="submit">
+            { isLoading ? t('contact.loading') : t('contact.submit')  }
+            {isLoading ? (
+    <Spinner
+      style={{ width: "0.7rem", height: "0.7rem" }}
+      color="light"
+    />
+  ) : null }
           </Button>
         </Form>
       </div>

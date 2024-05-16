@@ -7,13 +7,14 @@ import { ColorPicker } from 'antd';
 import { getColor, setColor } from '../../Hooks/useColor';
 import { useChangeLanguage } from '../../Hooks/useChangeLanguage';
 import { useChangeTheme } from '../../Hooks/useChangeTheme';
+import { useTranslation } from 'react-i18next';
 
 const FloatOption: React.FC = () => {
     const [PrimaryColor, setPrimaryColor] = useState(getColor("--primary"))
     const [SecondaryColor, setSecondaryColor] = useState(getColor("--secondary"))
     const { currentLanguage, changeLanguage } = useChangeLanguage();
     const { currentTheme, changeTheme } = useChangeTheme();
-
+    const [t] = useTranslation()
     return (
         <FloatButton.Group
         trigger="hover"
@@ -25,7 +26,7 @@ const FloatOption: React.FC = () => {
             }
             
         >
-            <Tooltip title="PrimaryColor" placement='rightTop'>
+            <Tooltip title={t("setting.PrimaryColor")} placement='rightTop'>
                 <FloatButton icon={
                     <ColorPicker defaultValue={PrimaryColor} onChange={
                         (value: any) => {
@@ -36,7 +37,7 @@ const FloatOption: React.FC = () => {
                     } size='small' />} />
             </Tooltip>
 
-            <Tooltip title="SecondaryColor" placement='rightTop'>
+            <Tooltip title={t("setting.SecondaryColor")} placement='rightTop'>
                 <FloatButton icon={
                     <ColorPicker defaultValue={SecondaryColor} onChange={
                         (value: any) => {
@@ -46,12 +47,12 @@ const FloatOption: React.FC = () => {
                         }
                     } size='small' />} />
             </Tooltip>
-             <Tooltip title={ currentLanguage === "en" ? "Change to Arabic" : "Change to English"} placement='rightTop'>
+             <Tooltip title={t("setting.Change_language")} placement='rightTop'>
                 <FloatButton onClick={()=>{
                     currentLanguage === "en" ? changeLanguage("ar")  : changeLanguage("en")
                 }} icon={<FaLanguage />} />
             </Tooltip>
-            <Tooltip title={ currentTheme !== "light" ? "Change to LightMood" : "Change to DarkMood"} placement='rightTop'>
+            <Tooltip title={ currentTheme !== "light" ? t("setting.Change_to_LightMood") : t("setting.Change_to_DarkMood")} placement='rightTop'>
                 <FloatButton onClick={()=>{
                     currentTheme === "light" ? changeTheme("dark")  : changeTheme("light")
                 }} icon={ currentTheme !== "light" ?  <MdLightMode /> : <MdNightlightRound /> } />

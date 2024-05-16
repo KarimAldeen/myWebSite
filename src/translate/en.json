@@ -32,38 +32,36 @@
 "hero": {
     "name": "KARIM ALDEEN",
     "role": "FULL STACK DEVELOPER",
-    "description": "Work As FULL STACK Developer",
-    "experience": "With Over three Years In React and half Year in Laravel ",
-    "personalDescription": "self-motivated, ambitious, and hard Worker Hoping to Make my interpersonal Skill to Achieve Goals of Company",
-    "askedQuestions": "Asked Questions",
+    "description": "I am a full stack developer with 3.5 years of experience in React.js and TypeScript, and 5 months of experience in Laravel. I specialize in creating dynamic, responsive web applications and have a solid understanding of both front-end and back-end technologies",
+     "askedQuestions": "Asked Questions",
     "contactMe": "Contact Me"
   },
 
 "powerfulFeatures": {
     "title": "POWERFUL FEATURES",
     "skills": {
-      "react": "React",
-      "typescript": "TypeScript",
-      "alluiframeworks": "All UI Frameworks",
-      "solidprinciples": "Solid Principles",
-      "github": "GitHub",
-      "seo": "SEO",
-      "laravel": "Laravel",
-      "adobe": "Adobe"
+      "skills_1": "React",
+      "skills_2": "TypeScript",
+      "skills_3": "All UI Frameworks",
+      "skills_4": "Solid Principles",
+      "skills_5": "GitHub",
+      "skills_6": "Design Patterns",
+      "skills_7": "Laravel",
+      "skills_8": "NextJs"
     }
   },
   "aboutUs": {
     "educationTitle": "My EDUCATION",
     "educationDescription": "After three years at my first university, I had to take a year off due to illness. Following my recovery, I chose to begin anew at a different university. Excited for a fresh start, I'm optimistic about the opportunities this change brings to my academic journey.",
-    "syrianVirtualUniversity": {
+    "1": {
       "title": "Syrian Virtual University",
-      "content": "Embarked on the journey of studying Information Technology (BACT) at the Syrian Virtual University. The first year curriculum provided a foundational understanding of various aspects of IT."
+      "content": "Embarked on the journey of studying Bachelor in Communications Technology (BACT) / BCF: at the Syrian Virtual University. The first year curriculum provided a foundational understanding of various aspects of IT."
     },
-    "metaCourseAdvancedReact": {
+    "2": {
       "title": "Meta Course Advanced React",
       "content": "Completed the Advanced React course offered by Meta, gaining proficiency in building sophisticated React applications and mastering advanced concepts."
     },
-    "metaCourseFULL STACKDevelopment": {
+    "3": {
       "title": "Meta Course Front-End Development",
       "content": "Engaged in the Front-End Development course provided by Meta, acquiring skills in creating responsive and visually appealing user interfaces using modern front-end technologies."
     }
@@ -94,13 +92,12 @@
     "projects": {
       "label": "Can you share details about some of the projects you worked on as a Front-End Developer?",
       "content": [
-        "(2021 - 10/2023): Developed a comprehensive Full Dashboard comprising over 40 pages for an E-commerce system.",
+        " Developed a comprehensive Full Dashboard comprising over 40 pages for an E-commerce system.",
         "Implemented advanced user interface pages for efficient data display and editing.",
         "Created a Vendor Dashboard for streamlined vendor management.",
         "Designed and built a Landing Page with complex animations to enhance user engagement.",
         "Successfully deployed the project to GitLab and a Linux server.",
-        "Freelancer (2020 - Present):",
-        "Qtrend:",
+      
         "Built a Website, E-commerce platform, and Dashboard for a software company.",
         "Optimum:",
         "Developed a Website and Dashboard for an oil company.",
@@ -108,7 +105,7 @@
         "Worked on the development of a mid-scale E-commerce platform using ReactJS.",
         "Completed the design and creation of over 5 logos.",
         "Crafted three Personal Portfolios showcasing diverse skills and projects.",
-        "(2020 - 03/2021):",
+       
         "Constructed a Dashboard for a large Delivery App.",
         "Developed three websites, including a Landing Page and Customer Interface.",
         "Successfully deployed the project to cPanel for seamless accessibility."
@@ -128,11 +125,12 @@
       "message": "Message",
       "typeYourMessage": "Type your message here",
       "submit": "Submit",
+      "loading" : "Loading",
       "emailSentSuccess": "Email sent successfully!"
     }
   , "footer": {
     "title": "Mohammed Karim Alden",
-    "description": "Work As FULL STACK Developer With Over three Years and half of Experience, self-motivated, ambitious, and hard Worker Hoping to Make my interpersonal Skill to Achieve Goals of Company",
+    "description": "I am a full stack developer with 3.5 years of experience in React.js and TypeScript, and 5 months of experience in Laravel. I specialize in creating dynamic, responsive web applications and have a solid understanding of both front-end and back-end technologies",
     "contact": {
       "title": "Contact Me",
       "phone": "Phone: 0951968995",
@@ -148,7 +146,14 @@
     "ContactMe": "ContactMe",
     "DownloadCv": "DownloadCv"
 
-  
-  
+    ,"setting":{
+      "PrimaryColor":"Primary Color",
+      "SecondaryColor":"Secondary Color",
+      "Change_language":"Change Language to Arabic",
+      "Change_to_LightMood":"Change To LightMood",
+      "Change_to_DarkMood":"Change To DarkMood"
+
+    }
+
 
 }

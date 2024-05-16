@@ -5,18 +5,18 @@ import { useTranslation } from 'react-i18next';
 const aboutUsData = [
   {
     id: 1,
-    titleKey: 'aboutUs.syrianVirtualUniversity.title',
-    contentKey: 'aboutUs.syrianVirtualUniversity.content',
+    titleKey: 'aboutUs.1.title',
+    contentKey: 'aboutUs.1.content',
   },
   {
     id: 2,
-    titleKey: 'aboutUs.metaCourseAdvancedReact.title',
-    contentKey: 'aboutUs.metaCourseAdvancedReact.content',
+    titleKey: 'aboutUs.2.title',
+    contentKey: 'aboutUs.2.content',
   },
   {
     id: 3,
-    titleKey: 'aboutUs.metaCourseFULL STACKDevelopment.title',
-    contentKey: 'aboutUs.metaCourseFULL STACKDevelopment.content',
+    titleKey: 'aboutUs.3.title',
+    contentKey: 'aboutUs.3.content',
   },
 ];
 
